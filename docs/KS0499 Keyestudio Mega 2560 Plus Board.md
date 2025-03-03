@@ -151,9 +151,10 @@ Connect board we provide to your computer, and open Arduino IDE.
 
 ![](media/40a968d312a8b080e52c4559201f498a.png)
 
-Click “Tools” to select **Board: Arduino Uno** and **Port: /dev/cu.usbserial-0001**.
+Click “Tools” to select **Board: Arduino 2560** and **Port: /dev/cu.usbserial-0001**.
 
-![](media/3123378638d9c83554a2c90bfa436bcf.png)
+
+
 
 Tap ![](media/98ec72440e6257e5812b408a929a37ba.png) to upload code, if burn successfully, you will view Done uploading.
 
