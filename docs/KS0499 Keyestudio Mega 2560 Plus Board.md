@@ -9,13 +9,13 @@ Keyestudio Mega 2560 plus Board, whose processor core is ATMEGA2560-16AU, is ful
 
 USB to TTL chip adopts more economic and stable CP2012.
 
-This plus board consists of 54-channel digital input and output ports, of which 15 pins are served as PWM output, 16 analog inputs, 4 serial communication ports, one 16MHz crystal oscillator, 1 USB port, 1 power socket, 1 ICSP interface and 1 reset button.
+This plus board consists of 54-channel digital input and output ports, of which 15 pins serve as PWM outputs, 16 analog inputs, 4 serial communication ports, 1 16MHz crystal oscillator, 1 USB port, 1 power socket, 1 ICSP interface, and 1 reset button.
 
 ##  **2.Specification**
 -   Microcontroller: ATMEGA2560-16AU
--   USB to TTL chip：CP2102
+-   USB to TTL chip： CP2102
 -   Operating Voltage: 5V
--   Input Voltage (recommended):DC 7-12V
+-   Input Voltage (recommended): DC 7-12V
 -   Digital I/O Pins: 54 (D0-D53)
 -   PWM Digital I/O Pins：15(D2-D13 D44-D46)
 -   Analog Input Pins: 16(A0-A15)
@@ -55,23 +55,25 @@ IIC communication interface：D20 represents SDA, D21 is SCL
 
 [](https://getting-started-with-arduino.readthedocs.io/en/latest/Arduino%20IDE%20Tutorial.html#a-windows-system)
 
-You could download Arduino IDE from the official website: <https://www.arduino.cc/>
+You can download the Arduino IDE from the official website: <https://www.arduino.cc/>
 
-Enter the link and click **SOFTWARE**:
+Open the link and click **SOFTWARE**:
 
 ![](media/35689c0bc68d7edba8c627bd3199eef6.png)
 
-There are various versions of IDE for Arduino. Just download a version compatible with your system.
+There are various versions of IDE for Arduino. Just download a version that is compatible with your system.
 
 ![](media/77e7c042126b8eeea11c791f56b5b4b2.png)
 
-Here we will show you how to download and install the windows version of Arduino IDE.
+Here, we will show you how to download and install the Windows version of Arduino IDE.
 
-There are two versions of IDE for WINDOWS system. You can choose between the installer (.exe) and the Zip file. For installer, it can be directly downloaded, without the need of installing it manually while for Zip package, you will need to install the driver manually.
+There are two versions of the IDE for Windows. You can choose between the installer (.exe) and the Zip package.
+> [!IMPORTANT]
+> If you decide to download the Zip package, you will have to install the driver manually.
 
 ![](media/8cab9c123f890c12acecb2b69da33fa9.png)
 
-You just need to click **JUST DOWNLOAD**.
+Click **JUST DOWNLOAD**.
 
 #### **B. Mac System**
 
@@ -85,23 +87,23 @@ After downloading, double-click to open it and follow the installation instructi
 
 #### **C.Detailed installation steps：**
 
-1.Save the .exe file downloaded from the software page to your hard drive and simply run the file .
+1. Save the .exe file downloaded from the software page to your hard drive and simply run the file.
 
 ![](media/8f8dc05a74e88f80404c221feb5be436.png)
 
-2.Read the License Agreement and agree it.
+2. Read the License Agreement.
 
 ![](media/56e65f892f7e0ec8750e4a34fbe30639.png)
 
-3.Choose the installation options.
+3. Choose the installation options.
 
 ![](media/c027cb419f67d478118b5714f5ed79a6.png)
 
-4.Choose the install location.
+4. Choose the install location.
 
 ![](media/e7e883fa1ed4d08ed5971c025696abca.png)
 
-5.Click finish and run Arduino IDE
+5. Click finish and run Arduino IDE
 
 ![](media/b956ef7c308fcb0f7dc7e94bbb964f17.png)
 
@@ -109,7 +111,7 @@ After downloading, double-click to open it and follow the installation instructi
 
 #### **A. Install Driver on Windows System**
 
-Now, let’s install the driver of keyestudio MEGA PLUS control board. Its chip is CP2102 serial chip. Some system（**WIN11**） can’t install automatically driver but you could install it by hand.
+Now, let’s install the driver of the Keyestudio MEGA PLUS control board. Its chip is a CP2102 serial chip. Some systems （**WIN11**） can’t install the driver automatically, but you can install it manually.
 
 **Download driver from:** [**https://fs.keyestudio.com/CP2102-WINDOWS**](https://fs.keyestudio.com/CP2102-WINDOWS)
 
@@ -117,13 +119,13 @@ Now, let’s install the driver of keyestudio MEGA PLUS control board. Its chip 
 
 Click the link to download ![](media/1c9b4c541ac50df90a99159db767e4b0.png), and we unzip it to ![](media/2cde1b1f44509733a1b88fefbbb9fb4a.png).
 
-Unzip again and we will get the folder ![](media/f37b95a77c63e40e3162f847bc2cf440.png). Please remember the path of this folder for later use.
+Unzip again, and we will get the folder![](media/f37b95a77c63e40e3162f847bc2cf440.png). Please remember the path of this folder for later use.
 
 Right click Computer—– Properties—– Device Manager.
 
 ![](media/ef1c8d62ed502304bcd512349b3211e4.jpeg)
 
-The yellow exclamation mark on the page implies an unsuccessful installation and you should double click ![](media/2417b11a225958b0ba8db020958aef74.jpeg), then click “**Update Drive…**”to update the driver.
+The yellow exclamation mark on the page implies an unsuccessful installation and you should double click![](media/2417b11a225958b0ba8db020958aef74.jpeg), then click “**Update Drive…**”to update the driver.
 
 ![](media/126261aab66afbfb432e50a195e98f55.jpeg)
 
@@ -131,23 +133,23 @@ Click “**Browse my computer for drivers**” to find the downloaded Arduino so
 
 ![](media/fd86e50736422de760b2a4c069fbdbeb.jpeg)
 
-There is a DRIVERS folder in Arduino software installed package, please open this folder and check the driver of CP210X series chips.
+There is a DRIVERS folder in the Arduino software installed package. Open this folder and check the driver for the CP210X series chips.
 
-Click “Browse…”, then search the driver of CP2102 and click“Next”.
+Click “Browse…”, then search for the driver of CP2102 and click“Next”.
 
 ![](media/b18e0a66e88dcf5a6c5964e45dd0db23.png)
 
-After a while, the driver is installed successfully.
+After a while, the driver should be installed successfully.
 
 ![](media/67c754bd8281ab1e1622d9a70688791b.jpeg)
 
-When opening the device manager, we will find that the yellow exclamation mark disappears, which means the driver of CP2102 is installed successfully.
+If you check the device manager again, the yellow exclamation mark should no longer appear.
 
 ![](media/cc7b58c15299bf0ef8d74d32d9b6e280.jpeg)
 
 #### **B. Install Driver on MAC System**
 
-Connect board we provide to your computer, and open Arduino IDE.
+Connect the board to your computer and open the Arduino IDE.
 
 ![](media/40a968d312a8b080e52c4559201f498a.png)
 
@@ -156,11 +158,12 @@ Click “Tools” to select **Board: Arduino 2560** and **Port: /dev/cu.usbseria
 
 
 
-Tap ![](media/98ec72440e6257e5812b408a929a37ba.png) to upload code, if burn successfully, you will view Done uploading.
+Tap![](media/98ec72440e6257e5812b408a929a37ba.png) to upload your code.
 
 ![](media/e97244571b69d21ff31de3b879b8b0e5.png)
 
-Note: If burn unsuccessfully, you need to install driver of CP2102, please continue to follow the instructions as below:
+> [!NOTE]
+>  If it burns successfully, you should see the "Done uploading." message, otherwise, you need to install the driver of CP2102. Please follow the instructions below.
 
 Download the driver of CP2102:<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
@@ -172,7 +175,7 @@ Download the driver of CP2102:<https://www.silabs.com/developers/usb-to-uart-bri
 
 ![](media/8dced2768d5f86d3d0c3f6076d87a9a8.png)
 
-3. Open folder and double-click SiLabsUSBDriverDisk.dmg file.
+3. Open the folder and double-click the SiLabsUSBDriverDisk.dmg file.
 
 ![](media/61ae3e706a1c4afa7948d5fb2e797a6d.png)
 
@@ -202,7 +205,7 @@ Download the driver of CP2102:<https://www.silabs.com/developers/usb-to-uart-bri
 
 ![](media/ca6bc6e536202f07a53c09201a0996ff.png)
 
-10. Click the lock to unlock security & privacy preference.
+10. Click the lock to unlock the security & privacy preference.
 
 ![](media/379caa1889f4a45614b27c9b2b934869.png)
 
@@ -212,7 +215,7 @@ Download the driver of CP2102:<https://www.silabs.com/developers/usb-to-uart-bri
 
 ![](media/19e43624efde1b223800201c944d25e9.png)
 
-12. Back to installation page, and wait to install.
+12. Go back to the installation page and wait to install.
 
 ![](media/bb0e17afd8bad8b8013f19d7a9da0fd9.png)
 
@@ -236,7 +239,7 @@ Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon and open Arduino IDE.
 
 To avoid the errors when uploading the program to the board, you need to select the correct Arduino board that matches the board connected to your computer.
 
-Then come back to the Arduino software, you should click Tools→Board, select the board. (as shown below)
+Then, click Tools→Board, select the board. (as shown below)
 
 ![](media/d27e784f35475d633be807e115c7358f.png)
 
@@ -254,11 +257,11 @@ Open file to choose Examples—>BASIC—>BLINK
 
 ![](media/39e05c310f6766d92bb4c3c2b279feaf.png)
 
-Set board and COM port, the bottom right corner of the IDE displays the corresponding board and COM port.
+Select your board and COM port. The bottom right corner of the IDE displays the corresponding board and COM port.
 
 ![](media/5fa8949b0b013180bde1f64f324568af.png)
 
-Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)icon to start compiling the program, and check errors.
+Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)icon to start compiling the program and check for errors.
 
 ![](media/e06bf758d9a42d81b346d79e45ca2b29.png)
 
